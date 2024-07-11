@@ -12,7 +12,7 @@ export default class KdTree {
 
   private agents: Agent[] = [];
   private agentTree: AgentTreeNode[] = [];
-  private obstacleTree: ObstacleTreeNode = new ObstacleTreeNode();
+  private obstacleTree: ObstacleTreeNode = null;
 
   buildAgentTree() {
     if (this.agents.length != this.simulator.getNumAgents()) {
