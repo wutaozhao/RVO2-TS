@@ -83,7 +83,7 @@ export default class KdTree {
   }
 
   buildObstacleTree() {
-    var obstacles = this.simulator.obstacles;
+    var obstacles = this.simulator.obstacles.slice();
     this.obstacleTree = this._buildObstacleTreeRecursive(obstacles);
   }
 
